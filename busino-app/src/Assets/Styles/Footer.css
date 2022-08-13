@@ -1,0 +1,33 @@
+.text{
+    color: #0b2856;
+}
+.text:hover{
+    color: red;
+}
+.foot{
+    background-color: #e7f3f3;
+}
+.fa-brands, .fab{
+    color: #0b2856;
+}
+.fa-brands, .fab:hover{
+    color: red;
+}
+.content{
+    color: #0b2856;
+}
+.name{
+    font-size: 15px;
+}
+.name1{
+    color: #4577be;
+}
+.margin{
+    margin-right: 60px;
+}
+.but{
+    background-color: #4f4fcc;
+}
+.but:hover{
+    background-color: #b41919;
+}
