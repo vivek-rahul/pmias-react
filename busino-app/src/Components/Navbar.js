@@ -1,67 +1,55 @@
-import React, { useState } from 'react';
-import {
-    MDBNavbar,
-    MDBContainer,
-    MDBIcon,
-    MDBNavbarNav,
-    MDBNavbarItem,
-    MDBNavbarLink,
-    MDBNavbarToggler,
-    MDBNavbarBrand,
-    MDBCollapse
-} from 'mdb-react-ui-kit';
-import Logo from '../Assets/Images/logo.png'
-import '../Assets/Styles/Navbar.css'
-import { MDBBtn } from 'mdb-react-ui-kit';
-import Signup from "../Components/Signup";
-
-export default function Navbar() {
-
-    const [showNavColorThird, setShowNavColorThird] = useState(false);
-
-
+function NavBar() {
     return (
-           <>
-            <MDBNavbar  className="naving" expand='lg'  light style={{ backgroundColor: 'white' }} >
-                <MDBContainer fluid>
-                    <MDBNavbarBrand href='#'><img src={Logo} alt="logo"/></MDBNavbarBrand>
-                    <MDBNavbarToggler
-                        type='button'
-                        data-target='#navbarColor02'
-                        aria-controls='navbarColor02'
-                        aria-expanded='false'
-                        aria-label='Toggle navigation'
-                        onClick={() => setShowNavColorThird(!showNavColorThird)}
-                    >
-                        <MDBIcon icon='bars' fas />
-                    </MDBNavbarToggler>
-                    <MDBCollapse show={showNavColorThird} navbar>
-                        <MDBNavbarNav className='justify-content-end justify-content-evenly item mt-5 mb-5' >
-                            <MDBNavbarItem className='active'>
-                                <MDBNavbarLink className="text" aria-current='page' href='/home' >
-                                    Home
-                                </MDBNavbarLink>
-                            </MDBNavbarItem>
-                            <MDBNavbarItem>
-                                <MDBNavbarLink className="text" href='/about'>About</MDBNavbarLink>
-                            </MDBNavbarItem>
-                            <MDBNavbarItem>
-                                <MDBNavbarLink className="text" href='/services'>Services</MDBNavbarLink>
-                            </MDBNavbarItem>
-                            <MDBNavbarItem>
-                                <MDBNavbarLink className="text" href='/gallery'>Gallery</MDBNavbarLink>
-                            </MDBNavbarItem>
-                            <MDBNavbarItem>
-                                <MDBNavbarLink className="text" href='/contact'>Contact</MDBNavbarLink>
-                            </MDBNavbarItem>
-                            <MDBNavbarItem>
-                                 <MDBBtn className="mt-2"  href="/register" onClick={Signup}>Signup</MDBBtn>
-                            </MDBNavbarItem>
-                        </MDBNavbarNav>
-                    </MDBCollapse>
-                </MDBContainer>
-            </MDBNavbar>
-          </>
-    );
+        <div id="navigation" className="header-main">
+            <div className="container">
+                <div className="row align-items-right">
+                    <div className="col-lg-3 col-6">
+                        <div className="desktop-logo">
+                            <a href="!#"><img src="assets/images/logo.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div className="col-lg-9 col-6">
+                        <div className="nav-toggle"></div>
+                        <div className="nav-menus-wrapper">
+                            <div className="mobile-logo">
+                                <a href="!#"><img src="assets/images/logo-white.png" alt="" /></a>
+                            </div>
+                            <ul className="nav-menu">
+                                <li><a className="active" href="!#">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li>
+                                    <a href="!#">Services</a>
+                                    <ul className="nav-dropdown nav-submenu">
+                                        <li><a href="service.html">Services </a></li>
+                                        <li><a href="service-single.html">Services Single </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="!#">Portfolio</a>
+                                    <ul className="nav-dropdown nav-submenu">
+                                        <li><a href="portfolio.html">Portfolio </a></li>
+                                        <li><a href="portfolio-details.html">Portfolio Details </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="!#">Blog</a>
+                                    <ul className="nav-dropdown nav-submenu">
+                                        <li><a href="blog-grid.html">Blog Grid </a></li>
+                                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar </a></li>
+                                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar </a></li>
+                                        <li><a href="blog-details-left-sidebar.html">Blog Left Details </a></li>
+                                        <li><a href="blog-details-right-sidebar.html">Blog Right Details </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    )
 }
 
+export default NavBar

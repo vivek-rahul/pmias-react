@@ -1,163 +1,83 @@
-import React from 'react';
-import { MDBFooter } from 'mdb-react-ui-kit';
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
-import Logo from "../Assets/Images/logo.png";
-import "../Assets/Styles/Footer.css";
+// import logo from '../images/logo.png'
 
-export default function Footer() {
+function Footer() {
     return (
-        <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
-            <section className='foot '>
-                <div className='container text-center text-md-start mt-5'>
-                    <div className='row mt-3 '>
-                        <div className='col-md-3 col-lg-4 col-xl-3  mb-4 mt-5 margin'>
-                            <h6 className='text-uppercase fw-bold mb-4'>
-                                <img src={Logo} alt="logo"/>
-                            </h6>
-                            <p className="name">
-                                Best is the most porro quisqudolor em are quis quam est, qui doquia dolor sit amcons
-                            </p>
-                            <p className='name1 fw-bold'>
-                                Subscribe our newsletter and get latest update about our offers, promotions
-                            </p>
-                            <Form>
-                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Control type="email" placeholder="Enter email" />
-                                </Form.Group>
-                                <Button className="but" variant="primary" type="submit">
-                                    Subscribe
-                                </Button>
-                            </Form>
+        <div className="section footer-section">
+            <div className="footer-widget-section section-padding mt-n10">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-4 col-md-8">
+                            <div className="footer-widget" data-aos="fade-up" data-aos-delay="200">
+                                {/* <a href="!#"><img src="assets/images/logo.png" alt="Logo" /></a> */}
+                                <p>Best is the most porro quisqudolor em are quis quam est, qui doquia dolor sit amcons</p>
+                                <p className="widget-text">Subscribe our newsletter and get latest update about our offers,
+                                    promotions</p>
+                                <div className="widget-subscribe">
+                                    <form action="#">
+                                        <input type="text" placeholder="Enter your email" />
+                                        <button className="btn btn-hover-primary">Subscribe</button>
+                                    </form>
+                                </div>
+                                <div className="widget-social">
+                                    <a href="!#"><i className="fa fa-facebook-f"></i></a>
+                                    <a href="!#"><i className="fa fa-twitter"></i></a>
+                                    <a href="!#"><i className="fa fa-instagram"></i></a>
+                                    <a href="!#"><i className="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div className='col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-5'>
-                            <h5 className='text-uppercase fw-bold mb-4 content '>Service</h5>
-                            <p>
-                                <a href='#!' className='text'>
-                                    Market Research
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text'>
-                                    SEO Optimization
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text'>
-                                    Amazing Strategy
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text'>
-                                    Financial Planning
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text'>
-                                    Project Analysis
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text'>
-                                    PR & Marketing
-                                </a>
-                            </p>
+                        <div className="col-lg-5 col-md-7">
+                            <div className="footer-widget-link">
+                                <div className="footer-widget" data-aos="fade-up" data-aos-delay="400">
+                                    <h5 className="footer-widget-title">Service</h5>
+                                    <ul className="footer-link">
+                                        <li><a href="!#">Research paper publications</a></li>
+                                        <li><a href="!#">Awards nomination</a></li>
+                                        <li><a href="!#">International workshops</a></li>
+                                        <li><a href="!#">Special lectures</a></li>
+                                    </ul>
+                                </div>
+                                <div className="footer-widget" data-aos="fade-up" data-aos-delay="500">
+                                    <h5 className="footer-widget-title">Information</h5>
+                                    <ul className="footer-link">
+                                        <li><a href="!#">About us</a></li>
+                                        <li><a href="!#">Portfolio</a></li>
+                                        <li><a href="!#">Login/Register</a></li>
+                                        <li><a href="!#">Terms &amp; Conditions</a></li>
+                                        <li><a href="!#">Promotions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-
-                        <div className='col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-5'>
-                            <h5 className='text-uppercase fw-bold mb-4 content'>Information</h5>
-                            <p>
-                                <a href='#!' className='text'>
-                                    About us
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text'>
-                                    Portfolio
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text'>
-                                    Login/Register
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text'>
-                                    Terms & Conditions
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text'>
-                                    Our Blog
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text'>
-                                    Promotions
-                                </a>
-                            </p>
-                        </div>
-
-                        <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-5'>
-                            <h5 className='text-uppercase fw-bold mb-4 content'>Contact</h5>
-                            <p>
-                                <i className='fas fa-home me-3 text'></i> 256 Central Park, East Town South valley, New York
-                            </p>
-                            <p>
-                                <a href='#!' className='text'>
-                                <i className='fas fa-envelope me-3'></i>
-                                info@example.com
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text'>
-                                <i className='fas fa-phone me-3'></i> +98745 612 325
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text'>
-                                <i className='fas fa-print me-3 '></i> + 01 234 567 89
-                                </a>
-                            </p>
+                        <div className="col-lg-3 col-md-5 col-sm-6">
+                            <div className="footer-widget" data-aos="fade-up" data-aos-delay="600">
+                                <h5 className="footer-widget-title">Service</h5>
+                                <div className="widget-info">
+                                    <p>12, Kavin Illam, Bharathi Nagar, Trichy</p>
+                                </div>
+                                <div className="widget-info">
+                                    <p><a href="!#">+12345 687 856</a></p>
+                                    <p><a href="!#">+98745 612 325</a></p>
+                                </div>
+                                <div className="widget-info">
+                                    <p><a href="!#">info@pm-ias.com</a></p>
+                                    <p><a href="!#">www.pm-ias.com</a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-                <div className='me-6 mx-5 d-none d-lg-block '>
-                    <div >
-                    <a href='' className='me-4 '>
-                        <i className='fab fa-facebook-f  '></i>
-                    </a>
-                    <a href='' className='me-4'>
-                        <i className='fab fa-twitter '></i>
-                    </a>
-                    <a href='' className='me-4'>
-                        <i className='fab fa-google '></i>
-                    </a>
-                    <a href='' className='me-4'>
-                        <i className='fab fa-instagram '></i>
-                    </a>
-                    <a href='' className='me-4'>
-                        <i className='fab fa-linkedin '></i>
-                    </a>
-                    <a href='' className='me-4'>
-                        <i className='fab fa-github '></i>
-                    </a>
-                </div>
-                </div>
-            </section>
-
-
-            <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-                © 2022 &nbsp;
-                <a className='text-reset fw-bold' href='/'>
-                Busino </a>
-                made with <i className="fa-solid fa-heart"> </i> &nbsp;by
-                <a className='text-reset fw-bold' href='/'>
-                    &nbsp;  Gowshika Kirubha Rahul
-                </a>
             </div>
-        </MDBFooter>
-    );
+            <div className="copyright">
+                <div className="container">
+                    <div className="copyright-text">
+                        <p>&copy; 2021 <span> PM-IAS </span> Made with <i className="fa fa-heart" aria-hidden="true"></i> by <a
+                            href="/index.html" target="_blank">Vivek</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 }
+
+export default Footer
