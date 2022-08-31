@@ -4,7 +4,10 @@ import App from './App';
 import Aos from 'aos';
 
 
-Aos.init()
+Aos.init({
+  once: true,
+  duration: 1200,
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

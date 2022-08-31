@@ -1,9 +1,10 @@
-import Feature from "./components/Features";
-import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
-import Service from "./components/Service";
-import Slider from "./components/Slider";
-import Top from "./components/Top";
+import Awards from "./components/home/awards";
+import Feature from "./components/home/Features";
+import Footer from "./components/home/Footer";
+import NavBar from "./components/home/NavBar";
+import Service from "./components/home/Service";
+import Slider from "./components/home/Slider";
+import Top from "./components/home/Top";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <Slider />
     <Feature />
     <Service />
+    <Awards />
     <Footer />
     <Top />
   </>

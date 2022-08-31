@@ -13,15 +13,15 @@ const data = {
             Description: 'Church'
         },
         {
-            title: 'Bob',
+            title: 'Vivek',
             Description: 'Smith'
         },
         {
-            title: 'Kane',
+            title: 'Rahul',
             Description: 'Salazar'
         },
         {
-            title: 'Amber',
+            title: 'React',
             Description: 'Church'
         }]
 }
